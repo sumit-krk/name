@@ -1,6 +1,6 @@
 <img width="100%" height="auto" src="https://i.imgur.com/iXuL1HG.png" height="175px"/>
 
-<h1 align="center">Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">, I'm Balkishan</h1>
+<h1 align="center">Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">, I'm Sumit</h1>
 <h3 align="center">Aspiring Full-Stack Web Developer from India.</h3>
 
 <br/>
@@ -22,11 +22,12 @@
 ## 🚀 Languages and Tools:
 
 <p align="left"> 
-    <img src="https://img.icons8.com/color/48/000000/react-native.png" style="margin-right:20px"/>
-    <img src="https://img.icons8.com/color/48/000000/javascript.png" style="margin-right:20px"/> 
     <img src="https://img.icons8.com/color/48/000000/html-5.png" style="margin-right:20px"/>
-    <img src="https://img.icons8.com/color/48/000000/css.png" style="margin-right:50px"/> 
-     <img style="padding-right:8px; padding-left:8px" src="https://img.icons8.com/color/48/000000/nodejs.png" style="margin-right:20px, margin-left:20px"/>
+    <img src="https://img.icons8.com/color/48/000000/css.png" style="margin-right:50px"/>
+    <img src="https://img.icons8.com/color/48/000000/javascript.png" style="margin-right:20px"/>
+    <img src="https://img.icons8.com/color/48/000000/bootstrap.png" style="margin-right:20px"/>   
+    <img src="https://img.icons8.com/color/48/000000/react-native.png" style="margin-right:20px"/>
+    <img style="padding-right:8px; padding-left:8px" src="https://img.icons8.com/color/48/000000/nodejs.png" style="margin-right:20px, margin-left:20px"/>
     <img style="margin-top:10px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="48" height="48" style="margin-right:20px"/>
     <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="45" height="45" style="margin-right:20px"/>
     <img src="https://img.icons8.com/color/48/000000/git.png" style="margin-right:20px"/> 
