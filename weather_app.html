@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h1,
+    h3 {
+      
+      font-family: "Ariel";
+    }
+    #heading,
+    #mainContainer,
+    #show {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+    #show p{
+      background-color: aqua;
+    }
+    #city {
+      height: 30px;
+      border: solid rgb(12, 184, 27) 2px;
+      border-radius: 5px;
+      font-size: 20px;
+      
+      font-family: "Ariel";
+    }
+    #city ~ button {
+      height: 30px;
+      border: solid rgb(224, 77, 9) 2px;
+      border-radius: 5px;
+      background-color: rgb(209, 38, 15);
+      color: white;
+      font-weight: bold;
+      font-size: 25px;
+      /* font-family: "Courier New", Courier, monospace; */
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    p {
+      color: rgb(80, 26, 26);
+      font-size: 20px;
+      font-family: "Courier New", Courier, monospace;
+    }
+  </style>
+  <body>
+    <div id="heading">
+      <h1>Weather App</h1>
+      <h3>Check weather of Any place</h3>
+    </div>
+    <div id="mainContainer">
+      <input type="text" placeholder="Enter city" name="" id="city" />
+      <button onclick="datas()">Submit</button>
+    </div>
+    <div id="show"></div>
+  </body>
+</html>
+<script>
+
+  async function datas() {
+    try {
+      var city = document.getElementById("city").value;
+      var response = await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9b88ee48d662200e46828e5428c46c23`
+      );
+      var data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+    let showDiv = document.getElementById("show");
+    showDiv.innerHTML = "";
+    let p1 = document.createElement("p");
+    let p2 = document.createElement("p");
+    let p3 = document.createElement("p");
+    let p4 = document.createElement("p");
+    let p5 = document.createElement("p");
+    let p6 = document.createElement("p");
+    let p7 = document.createElement("p");
+
+    p1.innerHTML = `Current Temperature -  ${(data.main.temp - 273).toFixed(
+      2
+    )}`;
+    p2.innerHTML = `Feels Like -  ${(data.main.feels_like - 273).toFixed(2)}`;
+    p3.innerHTML = `Humidity -  ${data.main.humidity.toFixed(2)} % `;
+    p4.innerHTML = `Maximum Temperature -  ${(data.main.temp_max - 273).toFixed(
+      2
+    )}`;
+    p5.innerHTML = `Minimum Temperature -  ${(data.main.temp_min - 273).toFixed(
+      2
+    )}`;
+    showDiv.append(p1, p2, p3, p4, p5);
+  } 
+</script>
